@@ -91,4 +91,18 @@ function playRound(playerSelection, computerSelection){
             computerscore.innerHTML = "Computer Score: "+computerWins;
             result.innerHTML = "Computer win! " +beats;
         }
+        
+        if(playerWins===5){
+            result.innerHTML = "Round is over. Player won.";
+            playerWins=0;
+            computerWins=0;
+            playerscore.innerHTML = "Player Score: "+playerWins;
+            computerscore.innerHTML = "Computer Score: "+computerWins;
+        } else if(computerWins===5){
+            result.innerHTML = "Round is over. Computer won.";
+            playerWins=0;
+            computerWins=0;
+            playerscore.innerHTML = "Player Score: "+playerWins;
+            computerscore.innerHTML = "Computer Score: "+computerWins;
+        }
 }
